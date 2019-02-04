@@ -1,0 +1,80 @@
+/* =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+   Colors you can use:
+   #938581  #75C9C8  #FCFFFD
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+   All colors, the box-shadow, and the border-radius
+   must be set-up as variables.
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=| */
+
+//COLORS
+$base-color: #938581;
+$accent: #75C9C8;
+$base-white: #FCFFFD;
+//BOX-SHADOW
+$bs: 0 0 15px $base-color;
+//BORDER_RADIUS
+$br: 10px;
+* { box-sizing: border-box; }
+
+body {
+  font-size: 24px;
+  font-family: sans-serif;
+  line-height: 1.6;
+
+  /* this is being used to center the card on the screen */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 75%;
+  padding: 2em;
+  border: 1px solid $base-color;
+  border-radius: $br;
+  box-shadow: $bs;
+  &__title {
+    color: $base-color;
+  }
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 45px;
+  text-decoration: none;
+  transition: box-shadow 150ms,
+    background-color 150ms;
+  /* button styles start here */
+  &__primary {
+    color: $base-white;
+    border: 2px solid $base-color;
+    background: $base-color;
+    border-radius: $br;
+    &:hover {
+      background: $accent;
+      border-color: $accent;
+      box-shadow: $bs;
+    }
+
+  }
+  &__outline {
+    border: 2px solid $base-color;
+    border-radius: $br;
+    color: $base-color;
+    &:hover {
+      background: $accent;
+      border-color: $accent;
+      box-shadow: $bs;
+      color: $base-white;
+    }
+  }
+
+
+  /* button styles end here */
+}

@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.btn {
+  /* your code starts here */
+  display: inline-block;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  /* your code ends here */
+}
+
+.btn__primary {
+  background: #19647e;
+}
+
+.btn__primary:hover {
+  background: #0d3c4b;
+}
+
+.btn__secondary {
+  background: #4b3f72;
+}
+
+.btn__secondary:hover {
+  background: #1f2041;
+}
+
+.btn__accent {
+  background: #FFC857;
+}
+
+.btn__accent:hover {
+  background: #775c27;
+}
+
+.cta .btn {
+  background: rgba(51, 51, 51, 0.5);
+}
+
+.cta .btn:hover {
+  background: #333;
+}
+
+.cta {
+  background: #FFC857;
+  color: #1F2041;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
+.solution {
+  height: 1000px;
+  max-width: 1000px;
+  margin: 10px auto;
+  background: url(/final-layout.PNG) no-repeat center center/cover;
+}
+
+.colors {
+  height: 1000px;
+  width: 1000px;
+  margin: 10px auto;
+  background: url(/final-css.png) no-repeat center;
+}
+/*# sourceMappingURL=styles.css.map */
