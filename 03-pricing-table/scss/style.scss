@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+//colors
+$white: #fff;
+$light-grey: rgba(0,0,0,.10);
+$dark-grey: rgba(0,0,0,.5);
+$green: #72b01d;
+
+$clr-accent: $green;
+$clr-body: $dark-grey;
+$clr-heading: $clr-accent;
+
+//typography
+$ff: 'Raleway', sans-serif;
+
+$fw-l: 300;
+$fw-n: 400;
+$fw-b: 700;
+
+$fs-h2: (48/16) * 1rem;
+$fs-body: (24/16) * 1rem;
+$fs-xl: (72/16) * 1rem;
+$fs-sm: (16/16) * 1rem;
+
+$ls: 5px;
+
+//helpers
+$spacer: 1rem;
+$bs: 0 0 $spacer $light-grey;
+
+// BUTTONS
+.btn {
+  display: inline-block;
+  padding: ($spacer) ($spacer * 2.5);
+  background: $dark-grey;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: $ls;
+  color: $white;
+  text: {
+    transform: uppercase;
+    decoration: none;
+  }
+  transition: all ease-out 200ms;
+  &:hover {
+    box-shadow: $bs;
+    background: $clr-accent;
+    transform: scale(1.22);
+  }
+
+  &--accent {
+  background: $white;
+  color: $dark-grey;
+
+  &:hover {
+    background: $dark-grey;
+    color: $white;
+
+  }
+
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $ff;
+  font-size: $fs-body;
+  color: $clr-body;
+
+}
+
+h2 {
+  font-size: $fs-h2;
+  color: $clr-heading;
+  letter-spacing: $ls;
+  text-transform: uppercase;
+}
+
+.pricing {
+  text-align: center;
+  // padding: 300px;
+}
+
+.prices {
+  margin: ($spacer * 10) auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: flex-start;
+  // background: red;
+
+}
+
+.price {
+  background: $white;
+  box-shadow: $bs;
+  padding: 5 * $spacer;
+
+  & + & {
+    margin-left: $spacer;
+  }
+
+  &__title {
+    color: $clr-heading;
+    letter-spacing: $ls;
+    text-transform: uppercase;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    // border-bottom: 1px solid $light-grey;
+    // margin: ()
+    &:not(:last-of-type)::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background: $light-grey;
+      margin: ($spacer * 2) 0;
+    }
+  }
+  &__cost {
+    font-size: $fs-xl;
+    font-weight: $fw-b;
+    color: $clr-accent;
+
+    span {
+      font: {
+        size: $fs-body;
+        weight: $fw-l;
+      }
+    }
+  }
+
+  &--accent {
+    background: $clr-accent;
+    padding-top: $spacer * 8;
+    padding-bottom: $spacer * 7;
+    margin-top: $spacer * -3;
+
+    & .price__title,
+    & .price__cost {
+      color: $white;
+    }
+  }
+}

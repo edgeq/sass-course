@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all ease-out 200ms;
+  transition: all ease-out 200ms;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  background: #72b01d;
+  -webkit-transform: scale(1.22);
+          transform: scale(1.22);
+}
+
+.btn--accent {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.btn--accent:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 3rem;
+  color: #72b01d;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.pricing {
+  text-align: center;
+}
+
+.prices {
+  margin: 10rem auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.price {
+  background: #fff;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  padding: 5rem;
+}
+
+.price + .price {
+  margin-left: 1rem;
+}
+
+.price__title {
+  color: #72b01d;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.price__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.price__list-item:not(:last-of-type)::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.price__cost {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #72b01d;
+}
+
+.price__cost span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.price--accent {
+  background: #72b01d;
+  padding-top: 8rem;
+  padding-bottom: 7rem;
+  margin-top: -3rem;
+}
+
+.price--accent .price__title,
+.price--accent .price__cost {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
