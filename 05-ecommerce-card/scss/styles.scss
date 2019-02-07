@@ -1,0 +1,113 @@
+//VARs
+$base-teal: #00A0AF;
+$light-teal: #59CBD5;
+$dark-teal: #006B75;
+
+$base-blue: #3366CC;
+$light-blue: #7EA2E8;
+$dark-blue: #2A54A6;
+
+$base-red: #CC0000;
+$light-red: #F37171;
+$dark-red: #930000;
+
+$clr-dark-green: #11998e;
+$clr-bright-green: #38ef7d;
+$clr-orange: #ff715b;
+
+$ff-ss: 'Raleway', sans-serif;
+
+$fw-bold: 900;
+$fw-norm: 500;
+$fw-light: 300;
+
+// MIXINS
+@mixin font($fs, $fw, $clr, $lh: 1.5, $ff: $ff-ss) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $clr;
+  line-height: $lh;
+  font-family: $ff;
+}
+
+@mixin box-shadow($clr, $blur, $x: 0, $y: 0, $spread: 0){
+  box-shadow: $x $y $blur $spread $clr;
+}
+
+@mixin btn($clr, $bg, $padding: .5em 1.25em){
+  display: inline-block;
+  text-decoration: none;
+  padding: $padding;
+  color: $clr;
+  background: $bg;
+}
+
+// STYLES
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card {
+  width: 650px;
+  background: $light-teal;
+  // text-align: center;
+  background: linear-gradient(-45deg, $light-teal, $clr-dark-green);
+  padding: 3em 3em 3em 8.5em;
+  border-radius: 25px;
+  @include box-shadow(rgba(black, .5), 25px);
+  position: relative;
+  margin-bottom: 5em;
+
+  &__image {
+    position: absolute;
+    left: -9.25em;
+    top: -2em;
+    // transform: rotate(-2deg);
+  }
+
+  &__title {
+    @include font(69px,$fw-bold ,white ,1 );
+  text-transform: uppercase;
+  }
+  &__price {
+    @include font(60px, $fw-light, white,);
+    margin-bottom: .1em;
+    span {
+      font-size: 30px;
+    }
+  }
+  &__desc {
+    @include font(24px, $fw-norm, rgba(black, .6));
+    margin-bottom: .5em;
+
+  }
+
+}
+
+.btn {
+  @include btn(white, $light-red);
+  @include font(18px, $fw-norm, white);
+  border-radius: 5px;
+  // @include box-shadow(rgba(black, 0), 10px);
+  transition: box-shadow ease-out 300ms;
+  margin-bottom: 1em;
+  &:hover {
+    @include box-shadow(rgba(black, .5), 10px);
+  }
+  &--accent {
+    @include btn(white, $dark-blue);
+
+  }
+}
+
