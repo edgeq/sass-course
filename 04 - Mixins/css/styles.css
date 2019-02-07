@@ -1,0 +1,103 @@
+body {
+  font-size: 3rem;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  text-align: center;
+  padding: 25vh 0;
+  text-transform: uppercase;
+}
+
+.section-one {
+  background: -webkit-gradient(linear, left top, right top, from(#B2FEFA), to(#0ED2F7));
+  background: linear-gradient(90deg, #B2FEFA, #0ED2F7);
+}
+
+.section-one .title::after {
+  display: block;
+  content: '';
+  margin: 0 auto;
+  width: 100vw;
+  height: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.section-one .button-one {
+  padding: .75em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.section-one .button-one:hover {
+  color: black;
+  background: white;
+}
+
+.section-two {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0F2027), to(#2C5364));
+  background: linear-gradient(to bottom, #0F2027, #2C5364);
+  color: white;
+}
+
+.section-two .title::after {
+  display: block;
+  content: '';
+  margin: 0 auto;
+  width: 90vw;
+  height: 1em;
+  background-color: black;
+}
+
+.section-two .button-two {
+  padding: .75em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #2C5364;
+  background-color: #0ED2F7;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.section-two .button-two:hover {
+  color: black;
+  background: white;
+}
+
+.section-three {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee9ca7), to(#ffdde1));
+  background: linear-gradient(to top, #ee9ca7, #ffdde1);
+}
+
+.section-three .title::after {
+  display: block;
+  content: '';
+  margin: 0 auto;
+  width: 100vw;
+  height: 3px;
+  background-color: #e00808;
+}
+
+.section-three .button-three {
+  padding: .75em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.section-three .button-three:hover {
+  color: black;
+  background: white;
+}
+/*# sourceMappingURL=styles.css.map */

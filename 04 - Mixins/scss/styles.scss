@@ -1,0 +1,80 @@
+body {
+  font-size: 3rem;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  text-align: center;
+  padding: 25vh 0;
+  text-transform: uppercase;
+}
+
+@mixin gradient($clr-1, $clr-2, $deg){
+  background: linear-gradient($deg, $clr-1, $clr-2);
+}
+
+
+@mixin pseudo($width, $height, $bg: black) {
+  &::after {
+    display: block;
+    content: '';
+    margin: 0 auto;
+    width: $width;
+    height: $height;
+    background-color: $bg;
+  }
+}
+
+@mixin btn( $clr: white,
+            $bg: black,
+            $hov-clr: black,
+            $hov-bg: white){
+  padding: .75em 1.5em;
+  text: {
+    transform: uppercase;
+    decoration: none;
+  }
+  display: inline-block;
+  color: $clr;
+  background-color: $bg;
+  margin-top: 1rem;
+  border-radius: 5px;
+  &:hover {
+    color: $hov-clr;
+    background: $hov-bg;
+  }
+}
+
+
+.section-one {
+  @include gradient(#B2FEFA,#0ED2F7, 90deg);
+  .title {
+    @include pseudo(100vw, 1em, rgba(#fff, .5));
+  }
+  .button-one {
+    @include btn;
+  }
+}
+
+.section-two {
+  @include gradient(#0F2027,#2C5364, to bottom);
+  .title {
+    @include pseudo(90vw, 1em);
+  }
+  color: white;
+  .button-two {
+    @include btn(#2C5364, #0ED2F7);
+  }
+}
+
+.section-three {
+  @include gradient(#ee9ca7, #ffdde1, to top);
+  .title {
+    @include pseudo(100vw, 3px, rgb(224, 8, 8));
+  }
+  .button-three {
+    @include btn;
+  }
+}
+
