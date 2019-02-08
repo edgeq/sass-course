@@ -1,0 +1,14 @@
+// The Main CSS only serves to import all other partials. Modular is cool.
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/nav';
+@import 'layout/footer';
+
+@import 'pages/404';
+@import 'pages/home';
+@import 'pages/contact';
