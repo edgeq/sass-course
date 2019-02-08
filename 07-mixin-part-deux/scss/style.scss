@@ -1,0 +1,63 @@
+$trans-1: right 500ms ease-out;
+$trans-2: background 1000ms ease-in;
+$all-trans: $trans-1, $trans-2;
+
+$clr-list-1: #930000, #F37171;
+$clr-list-2: #006B75,
+            #59CBD5,
+            #7EA2E8,
+            #2A54A6;
+$clr-list-3: #333,
+            #949494,
+            #006B75,
+            #00A0AF,
+            #7EA2E8,
+            #3366CC;
+
+
+@mixin gradient($lists, $deg: 45deg) {
+  background: linear-gradient($deg, $lists);
+
+}
+
+@mixin transition($tr-props...) {
+  transition: $tr-props;
+}
+
+section {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center; justify-content: center; font-size: 2.5rem;
+  }
+
+.transition-box {
+  background: pink;
+  padding: .5em;
+  position: absolute;
+  text-align: center;
+  top: 2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  // Your transition @include goes here
+  @include transition($trans-1, $trans-2);
+  // @include transition(right 500ms ease-in, background 1000ms ease-out);
+}
+
+.transition-box:hover {
+  background: lightblue;
+  right: 50%;
+
+}
+.challenge-part-one {
+  @include gradient($clr-list-1, 270deg);
+}
+
+.challenge-part-two {
+  @include gradient($clr-list-2, 90deg);
+}
+
+.challenge-part-three {
+  @include gradient($clr-list-3, to left);
+}

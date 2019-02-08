@@ -1,0 +1,48 @@
+section {
+  height: 50vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5rem;
+}
+
+.transition-box {
+  background: pink;
+  padding: .5em;
+  position: absolute;
+  text-align: center;
+  top: 2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  -webkit-transition: right 500ms ease-out, background 1000ms ease-in;
+  transition: right 500ms ease-out, background 1000ms ease-in;
+}
+
+.transition-box:hover {
+  background: lightblue;
+  right: 50%;
+}
+
+.challenge-part-one {
+  background: -webkit-gradient(linear, right top, left top, from(#930000), to(#F37171));
+  background: linear-gradient(270deg, #930000, #F37171);
+}
+
+.challenge-part-two {
+  background: -webkit-gradient(linear, left top, right top, from(#006B75), color-stop(#59CBD5), color-stop(#7EA2E8), to(#2A54A6));
+  background: linear-gradient(90deg, #006B75, #59CBD5, #7EA2E8, #2A54A6);
+}
+
+.challenge-part-three {
+  background: -webkit-gradient(linear, right top, left top, from(#333), color-stop(#949494), color-stop(#006B75), color-stop(#00A0AF), color-stop(#7EA2E8), to(#3366CC));
+  background: linear-gradient(to left, #333, #949494, #006B75, #00A0AF, #7EA2E8, #3366CC);
+}
+/*# sourceMappingURL=style.css.map */
