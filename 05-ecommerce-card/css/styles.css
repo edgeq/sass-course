@@ -24,6 +24,9 @@ body {
 }
 
 .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1;
+          flex: 0 1;
   width: 650px;
   background: #59CBD5;
   background: linear-gradient(-45deg, #59CBD5, #11998e);

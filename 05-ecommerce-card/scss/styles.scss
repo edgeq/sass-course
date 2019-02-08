@@ -59,6 +59,7 @@ body {
   align-items: center;
 }
 .card {
+  flex: 0 1;
   width: 650px;
   background: $light-teal;
   // text-align: center;
