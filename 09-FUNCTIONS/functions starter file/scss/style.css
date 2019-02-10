@@ -1,0 +1,19 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.one, .two, .three {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.one, .two, .three {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+// @functions
+
+$primary: #80A1D4;
+$secondary: #475B5A;
+$accent: #75C9C8;
+$black: #232020; 
+
