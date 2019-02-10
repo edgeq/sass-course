@@ -1,0 +1,13 @@
+$primary: #26ccaa;
+@mixin text-color($color) {
+  @if type-of($color) != color {
+    @error 'this mixin only accepts colors, you entered `#{$color}`';
+  } 
+  color: $color;
+  background: type-of($color);
+}
+
+body {
+  @include text-color($primary);
+  @debug $primary;
+}
