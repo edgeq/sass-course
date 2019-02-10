@@ -19,16 +19,16 @@ body {
 
 .one {
   background: #80A1D4;
-  color: black;
+  color: rgba(35, 32, 32, 0.75);
 }
 
 .two {
   background: #475B5A;
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .three {
   background: #75C9C8;
-  color: black;
+  color: rgba(35, 32, 32, 0.75);
 }
 /*# sourceMappingURL=style.css.map */
