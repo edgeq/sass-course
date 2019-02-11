@@ -1,0 +1,73 @@
+//make a breakpoints map
+$breakpoints: (
+  medium: 600px,
+  large: 960px,
+  xl: 1200px,
+);
+
+@mixin mq($size) {
+  $breakpoint: map-get($breakpoints, $size);
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+body {
+  background: red;
+  @include mq(medium) {
+    background: blue;
+  }
+  @include mq(large) {
+    background: cadetblue;
+  }
+}
+//won't work for custom query
+@mixin mq-custom($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+// maps @each with fonts
+$font-sizes: (
+  h1: 4rem,
+  h2: 3rem,
+  h3: 2.5rem,
+  h4: 2rem,
+  p: 1rem,
+);
+
+@each $tag, $size in $font-sizes {
+  #{$tag} {
+    font-size: $size;
+  }
+}
+
+// @each maps challenge
+$links: (
+  normal: (
+    color: purple,
+    font-weight: normal,
+  ),
+  important: (
+    color: red,
+    font-weight: bold,
+  ),
+  external: (
+    color: yellow,
+    font-weight: normal,
+    text-transform: uppercase,
+  )
+);
+
+@each $link-name, $properties in $links {
+  .#{$link-name}-link {
+    text-decoration: none;
+    // color: map-get($properties, color);
+    // font-weight: map-get($properties, font-weight);
+    // text-transform: map-get($properties, text-transform);
+    @each $key, $val in $properties {
+      #{$key}: $val;
+    }
+  }
+}

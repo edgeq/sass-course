@@ -1,0 +1,55 @@
+body {
+  background: red;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background: blue;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    background: cadetblue;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.normal-link {
+  text-decoration: none;
+  color: purple;
+  font-weight: normal;
+}
+
+.important-link {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
+.external-link {
+  text-decoration: none;
+  color: yellow;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
