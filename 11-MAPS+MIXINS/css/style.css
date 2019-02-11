@@ -2,9 +2,9 @@ body {
   background: red;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 2000px) {
   body {
-    background: blue;
+    background: cyan;
   }
 }
 
