@@ -1,0 +1,34 @@
+.testimonials {
+  @include limit-width();
+  margin-top: $spacer;
+  @include mq(big){
+    @include grid;
+  }
+}
+
+.testimonial {
+  box-shadow: $box-shadow;
+  color: grey();
+  margin: $spacer auto;
+
+  &__body {
+    padding: $spacer;
+  }
+
+  &__credit {
+    background: grey(2);
+    padding: ($spacer / 2);
+  }
+  &__name {
+    font-weight: $fw-bold;
+    @include underline($margin: 0.5em, $width:50px){
+      opacity: .25;
+    };
+  }
+  &__position {
+    font-size: .9em;
+    color: grey(3);
+  }
+
+
+}

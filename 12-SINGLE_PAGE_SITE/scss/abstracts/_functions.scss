@@ -1,0 +1,7 @@
+@function grey($shade: 4) {
+  @if type-of($shade) != number or $shade < 1 or $shade > 5 {
+    @error 'grey() only accepts values between 1 and 5';
+  }
+  $value: map-get($greys, $shade);
+  @return $value
+}

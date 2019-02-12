@@ -56,4 +56,4 @@ Most component spacing, such as grid gaps and component padding, is 2em.
 
 - 0 - 449px
 - 449px - 859px
-- 860px +
+- 860px +Ó´

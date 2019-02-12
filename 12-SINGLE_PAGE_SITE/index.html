@@ -31,7 +31,7 @@
       </svg>
       </a></li>
       <li><a href="#meals">Meals</a></li>
-      <li><a href="#testimonilas">Testimonials</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
     </ul>
   </nav>
 
@@ -41,12 +41,12 @@
   </section>
 
   <section class="section section--about" id="about">
-    <h2 class="section__title">This is a nice big title</h2>
-    <p class="section__subtitle">This is a subhead which mentions something interestings</p>
-    <img src="assets/images/about.jpg" alt="food seen from above">
-    <h3>this introduces the following text</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil labore sequi ex voluptates blanditiis soluta sapiente consequuntur dolorum pariatur.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint explicabo in blanditiis incidunt, architecto alias laboriosam praesentium rem esse.</p>
+    <h2 class="section__title section--about__title">This is a nice big title</h2>
+    <p class="section__subtitle section--about__subtitle">This is a subhead which mentions something interestings</p>
+    <img class="section--about__image" src="assets/images/about.jpg" alt="food seen from above">
+    <h3 class="section--about__heading">this introduces the following text</h3>
+    <p class="section--about__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil labore sequi ex voluptates blanditiis soluta sapiente consequuntur dolorum pariatur.</p>
+    <p class="section--about__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint explicabo in blanditiis incidunt, architecto alias laboriosam praesentium rem esse.</p>
   </section>
 
   <section class="section section--facts">
@@ -61,26 +61,90 @@
           <h3>THIS IS A SUBTITLE</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet placeat suscipit? Impedit corrupti sapiente molestiae tenetur aperiam, eaque consequuntur?</p>
       </div>
-        <div class="fact">
-            <h3>THIS IS A SUBTITLE</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet placeat suscipit? Impedit corrupti sapiente molestiae tenetur aperiam, eaque consequuntur?</p>
-        </div>
-        <div class="fact">
-            <h3>THIS IS A SUBTITLE</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet placeat suscipit? Impedit corrupti sapiente molestiae tenetur aperiam, eaque consequuntur?</p>
-        </div>
+      <div class="fact">
+          <h3>THIS IS A SUBTITLE</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet placeat suscipit? Impedit corrupti sapiente molestiae tenetur aperiam, eaque consequuntur?</p>
+      </div>
+      <div class="fact">
+          <h3>THIS IS A SUBTITLE</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet placeat suscipit? Impedit corrupti sapiente molestiae tenetur aperiam, eaque consequuntur?</p>
+      </div>
     </div>
   </section>
 
-  <section class="section section--meals" id="meals"></section>
-
-  <section class="testimonials">
-    <h2 class="section__title">Some of our meals</h2>
+  <section class="section section--meals" id="meals">
+    <h2 class="section section__title section__title--white">Some of our meals.</h2>
     <p class="section__subtitle">This is a subhead which mentions some interesting things</p>
-    <img src="assets/images/meal-01.jpg" alt="salmon">
-    <p class="img__caption"></p>
+    <div class="meals">
+      <!-- meal 01 -->
+      <figure class="meals__meal">
+        <img class="meals__image" src="assets/images/meal-01.jpg" alt="" >
+        <figcaption class="meals__caption">
+          <h3 class="meals__title">About this meal</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, qui?</p>
+        </figcaption>
+      </figure>
+      <!-- meal 02 -->
+      <figure class="meals__meal">
+          <img class="meals__image" src="assets/images/meal-02.jpg" alt="" >
+          <figcaption class="meals__caption">
+            <h3 class=
+"meals__title">About this meal</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, qui?</p>
+          </figcaption>
+        </figure>
+      <!-- meal 03 -->
+      <figure class="meals__meal">
+          <img class="meals__image" src="assets/images/meal-03.jpg" alt="" >
+          <figcaption class="meals__caption">
+            <h3 class=
+"meals__title">About this meal</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, qui?</p>
+          </figcaption>
+        </figure>
+    </div>
   </section>
 
-  <footer></footer>
+  <section class="section section--testimonials" id="testimonials">
+    <h2 class="section__title">What clients are saying about us.</h2>
+
+    <div class="testimonials">
+      <!-- TESTIMONIAL 01 -->
+      <div class="testimonial">
+        <img src="assets/images/testimonial-01-john.jpg" alt="" class="testimonial__image">
+        <p class="testimonial__body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vero expedita ab laboriosam labore asperiores est totam, nobis, magnam error praesentium unde odit incidunt quae rerum eveniet esse, quasi iste.</p>
+        <div class="testimonial__credit">
+          <p class="testimonial__name">Luis Kang</p>
+          <p class="testimonial__position">CEO</p>
+        </div>
+      </div>
+      <!-- TESTIMONIAL 02 -->
+      <div class="testimonial">
+          <img src="assets/images/testimonial-02-sam.jpg" alt="" class="testimonial__image">
+          <p class="testimonial__body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vero expedita ab laboriosam labore asperiores est totam, nobis, magnam error praesentium unde odit incidunt quae rerum eveniet esse, quasi iste.</p>
+          <div class="testimonial__credit">
+            <p class="testimonial__name">&#x1F4A9;</p>
+            <p class="testimonial__position">&#x1F525;</p>
+          </div>
+        </div>
+      <!-- TESTIMONIAL 03 -->
+      <div class="testimonial">
+          <img src="assets/images/testimonial-03-patricia.jpg" alt="" class="testimonial__image">
+          <p class="testimonial__body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vero expedita ab laboriosam labore asperiores est totam, nobis, magnam error praesentium unde odit incidunt quae rerum eveniet esse, quasi iste.</p>
+          <div class="testimonial__credit">
+            <p class="testimonial__name">Sonia Blade</p>
+            <p class="testimonial__position">Captain</p>
+          </div>
+        </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+  </footer>
 </body>
 </html>

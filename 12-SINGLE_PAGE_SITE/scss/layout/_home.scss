@@ -1,0 +1,9 @@
+.section--home {
+  background: url(../../assets/images/hero-bg.jpg);
+  background-size: cover;
+  padding: 10em $spacer;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,35 @@
+.section--meals {
+  background: url(../../assets/images/meals-bg.jpg);
+  // padding: 0 $spacer;
+}
+
+.meals {
+  font-weight: $fw-normal;
+  @include limit-width();
+
+  &__meal {
+    position: relative;
+    margin-bottom: $spacer;
+  }
+  &__image {
+    display: block;
+  }
+
+  &__caption {
+    position: absolute;
+    background: rgba(grey(5), .5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: $spacer;
+  }
+
+  &__title {
+    color: grey(1);
+    margin-top: 0;
+  }
+
+  @include mq(big){
+    @include grid;
+  }
+}
